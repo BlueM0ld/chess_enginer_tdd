@@ -1,0 +1,4 @@
+unit/ChessPiecesTest.java
+ unit.ChessPiecesTest
+unit/BoardTest.java
+ unit.BoardTest
