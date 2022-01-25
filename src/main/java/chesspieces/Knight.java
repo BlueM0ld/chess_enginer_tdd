@@ -4,6 +4,8 @@ package chesspieces;
 import board.Position;
 import enumvalues.Side;
 
+import java.util.List;
+
 /**
  * Knight
  */
@@ -29,12 +31,12 @@ public class Knight extends Piece {
     @Override
     public String typeOfPiece(){
         return "knight";
-    };
+    }
     
-//    @Override
-//    public List<Position> movePositions(ChessBoard chessBoard){
-//
-//        return null;
-//    };
-//
+    @Override
+    public List<Position> movePositions(){
+
+        return null;
+    }
+
 }

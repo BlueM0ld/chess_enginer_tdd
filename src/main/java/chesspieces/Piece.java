@@ -3,6 +3,8 @@ package chesspieces;
 
 import board.Position;
 
+import java.util.List;
+
 
 public abstract class Piece {
 
@@ -14,6 +16,6 @@ public abstract class Piece {
         return "empty";
     }
 
-//    public List<Position> movePositions(Tile tile, ChessBoard chessBoard);
+    public abstract List<Position> movePositions();
 
 }

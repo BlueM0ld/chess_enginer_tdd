@@ -3,6 +3,8 @@ package chesspieces;
 import board.Position;
 import enumvalues.Side;
 
+import java.util.List;
+
 
 public class Queen extends Piece{
     Position position;
@@ -27,10 +29,10 @@ public class Queen extends Piece{
     public String typeOfPiece() {
         return side.equals(Side.WHITE)? "Q":"q";
     }
-//
-//    @Override
-//    public List<Position> movePositions(ChessBoard board) {
-//        return null;
-//    }
-//
+
+    @Override
+    public List<Position> movePositions() {
+        return null;
+    }
+
 }

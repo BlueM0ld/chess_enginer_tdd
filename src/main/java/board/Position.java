@@ -7,4 +7,13 @@ public class Position {
         this.file = file;
         this.rank = rank;
     }
+
+    public int getFile() {
+        return file;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
 }

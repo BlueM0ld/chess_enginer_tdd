@@ -1,26 +1,26 @@
-board/Position.java
- board.Position
+enumvalues/Pieces.java
+ enumvalues.Pieces
 board/Tile.java
  board.Tile
+chesspieces/Queen.java
+ chesspieces.Queen
+board/BoardSetup.java
+ board.BoardSetup
+board/Position.java
+ board.Position
+enumvalues/Side.java
+ enumvalues.Side
 chesspieces/Rook.java
  chesspieces.Rook
-chesspieces/Pawn.java
- chesspieces.Pawn
+chesspieces/King.java
+ chesspieces.King
 chesspieces/Bishop.java
  chesspieces.Bishop
 chesspieces/Piece.java
  chesspieces.Piece
 chesspieces/Knight.java
  chesspieces.Knight
-chesspieces/Queen.java
- chesspieces.Queen
-board/BoardSetup.java
- board.BoardSetup
-chesspieces/King.java
- chesspieces.King
-enumvalues/Pieces.java
- enumvalues.Pieces
-enumvalues/Side.java
- enumvalues.Side
 board/ChessBoard.java
  board.ChessBoard
+chesspieces/Pawn.java
+ chesspieces.Pawn

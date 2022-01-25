@@ -42,16 +42,16 @@ public class King extends Piece{
         return side.equals(Side.WHITE) ? "K":"k";
     }
 
-//    @Override
-//    public List<Position> movePositions(ChessBoard board) {
-//        List <Position> listOfMoves = new ArrayList<>();
-//        // int kingFile = position.getFile();
-//        // int kingRank = position.getRank();
-//        // for(int i = 0; i<potentialMove.length; i++){
-//
-//        //     listOfMoves.add(new Position(kingFile+potentialMove[i][i]));
-//        // }
-//        return listOfMoves;
-//    }
+    @Override
+    public List<Position> movePositions() {
+        List <Position> listOfMoves = new ArrayList<>();
+        // int kingFile = position.getFile();
+        // int kingRank = position.getRank();
+        // for(int i = 0; i<potentialMove.length; i++){
+
+        //     listOfMoves.add(new Position(kingFile+potentialMove[i][i]));
+        // }
+        return listOfMoves;
+    }
 
 }

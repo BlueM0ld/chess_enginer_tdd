@@ -1,4 +1,6 @@
-unit/ChessPiecesTest.java
- unit.ChessPiecesTest
+unit/KingTest.java
+ unit.KingTest
 unit/BoardTest.java
  unit.BoardTest
+unit/PawnTest.java
+ unit.PawnTest

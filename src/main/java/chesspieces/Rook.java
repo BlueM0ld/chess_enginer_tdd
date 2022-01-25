@@ -3,6 +3,9 @@ package chesspieces;
 import board.Position;
 import enumvalues.Side;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Rook extends Piece {
 
     Position position;
@@ -28,23 +31,19 @@ public class Rook extends Piece {
         return side.equals(Side.WHITE)? "R":"r";
     }
 
-//    @Override
-//    public List<Position> movePositions(ChessBoard board) {
-//        List<Position> listOfMoves = new ArrayList<>();
-//        int currentFilePosition = position.getFile();
-//        int currentRankPosition = position.getRank();
-//
-//        // Position futurePosition;
-//
-//        try{
-//            for(int i = 0; i<8 ; i++) {
-//                listOfMoves.add(new Position(i, currentRankPosition));
-//                listOfMoves.add(new Position(currentFilePosition, i));
-//            }
-//        }catch (IllegalPositionException e){
-//            System.out.println("Illegal move caught");
-//        }
-//        return null;
-//    }
+    @Override
+    public List<Position> movePositions() {
+        List<Position> listOfMoves = new ArrayList<>();
+        int currentFilePosition = position.getFile();
+        int currentRankPosition = position.getRank();
+
+
+        for(int i = 0; i<8 ; i++) {
+                listOfMoves.add(new Position(i, currentRankPosition));
+                listOfMoves.add(new Position(currentFilePosition, i));
+        }
+
+        return null;
+    }
 
 }

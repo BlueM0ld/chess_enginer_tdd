@@ -3,6 +3,9 @@ package chesspieces;
 import board.Position;
 import enumvalues.Side;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Pawn
  */
@@ -32,41 +35,26 @@ public class Pawn extends Piece{
         return side.equals(Side.WHITE) ? "P" : "p";
     }
 
-//    @Override
-//    public List<Position> movePositions(ChessBoard board) {
-//        return null;
-//    }
+    @Override
+    public List<Position> movePositions() {
+        List <Position> listOfMoves = new ArrayList<>();
+        Position pawn = this.position;
 
-//    @Override
-//        public List<Position> movePositions(Tile tile,ChessBoard chessBoard){
-//            List <Position> listOfMoves = new ArrayList<>();
-//            //int currentRankPos = position.getRank();
-//            //TODO At the first move can move 1 square or 2 square else 1
-//            //TODO Capture is opposite piece is 1 square diagonal
-//
-//            Position futurePosition;
-//            try {
-//                //Lmaooooooo gotta figure out black cause the moves are inverted....whoops
-//                futurePosition = new Position(this.position.getRank()+1, this.position.getFile());
-//            } catch (IllegalPositionException e) {
-//                e.printStackTrace();
-//                return listOfMoves;
-//            }
-//            //Get future position of the chess piece
-//            final Tile futureMove =chessBoard.getTile(futurePosition);
-//
-//    //        if (!futureMove.getIsOccupied() && futureMove.getPosition().getFile() == 7){
-//               //TODO Promote Pawn
-//    //        }
-//             if(!futureMove.getIsOccupied()) listOfMoves.add(futurePosition);
-//
-//
-//            return listOfMoves;
-//        };
+        if(pawn.getRank()==8){
+            //replace piece
+        }
 
+        if(pawn.getRank()==2){
+            listOfMoves.add(new Position(pawn.getRank()+1, pawn.getFile()));
+            listOfMoves.add(new Position(pawn.getRank()+2, pawn.getFile()));
+        }else{
+            listOfMoves.add(new Position(pawn.getRank()+1, pawn.getFile()));
+        }
 
+        return listOfMoves;
+    }
 
     public Boolean enPassantBoolean(){
         return false;
-    };
+    }
 }

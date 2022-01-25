@@ -4,6 +4,9 @@ package chesspieces;
 import board.Position;
 import enumvalues.Side;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Bishop extends Piece{
 
@@ -28,10 +31,10 @@ public class Bishop extends Piece{
         return side.equals(Side.WHITE) ? "B":"b";
     }
 
-//    @Override
-//    public List<Position> movePositions(ChessBoard board) {
-//        List<Position> listOfMoves = new ArrayList<>();
-//        return listOfMoves;
-//    }
-//
+    @Override
+    public List<Position> movePositions() {
+        List<Position> listOfMoves = new ArrayList<>();
+        return listOfMoves;
+    }
+
 }
