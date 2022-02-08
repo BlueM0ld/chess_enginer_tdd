@@ -35,7 +35,7 @@ public class PawnTest {
     }
 
     @Test
-    public void testPawnPosition(){
+    public void testPawnPositionNonStart(){
         //given
         Position pos = new Position(3,1);
         Piece pawn = new Pawn(pos, Side.BLACK);
@@ -47,4 +47,14 @@ public class PawnTest {
         Assertions.assertEquals(1, potentialMoves.size());
     }
 
+    @Test
+    public void testPawnPromoting(){
+        //given
+        Position pos = new Position(7,1);
+        Piece pawn = new Pawn(pos, Side.BLACK);
+
+
+
+
+    }
 }

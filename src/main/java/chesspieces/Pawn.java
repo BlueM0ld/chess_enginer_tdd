@@ -2,6 +2,7 @@ package chesspieces;
 
 import board.Position;
 import enumvalues.Side;
+import exception.IllegalPositionException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,12 +37,13 @@ public class Pawn extends Piece{
     }
 
     @Override
-    public List<Position> movePositions() {
+    public List<Position> movePositions() throws IllegalPositionException {
         List <Position> listOfMoves = new ArrayList<>();
         Position pawn = this.position;
 
         if(pawn.getRank()==8){
             //replace piece
+
         }
 
         if(pawn.getRank()==2){
@@ -53,6 +55,11 @@ public class Pawn extends Piece{
 
         return listOfMoves;
     }
+
+    public void promoteToPiece(Piece piece){
+
+    }
+
 
     public Boolean enPassantBoolean(){
         return false;

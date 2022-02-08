@@ -2,6 +2,7 @@ package chesspieces;
 
 
 import board.Position;
+import exception.IllegalPositionException;
 
 import java.util.List;
 
@@ -16,6 +17,6 @@ public abstract class Piece {
         return "empty";
     }
 
-    public abstract List<Position> movePositions();
+    public abstract List<Position> movePositions() throws IllegalPositionException;
 
 }

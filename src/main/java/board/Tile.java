@@ -5,7 +5,7 @@ import chesspieces.Piece;
 public class Tile {
 
     private final Position position;
-    private boolean isOccupied;
+    public boolean isOccupied;
     private Piece piece;
 
     public Tile(Position position,Piece piece){
@@ -36,4 +36,8 @@ public class Tile {
     public Boolean isTileOccupied() {
         return isOccupied;
     }
+    public void setOccupied(boolean occupied) {
+        isOccupied = occupied;
+    }
+
 }

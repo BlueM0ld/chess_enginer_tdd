@@ -6,6 +6,7 @@ import board.ChessBoard;
 import board.Position;
 import board.Tile;
 import chesspieces.Piece;
+import exception.IllegalPositionException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -34,7 +35,7 @@ public class BoardTest {
     }
 
     @Test
-    public void testChessBoardInitialPieces(){
+    public void testChessBoardInitialPieces() throws IllegalPositionException {
         //given
         ChessBoard chessBoard = new ChessBoard();
         //when
