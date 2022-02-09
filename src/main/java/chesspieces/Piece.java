@@ -13,10 +13,8 @@ public abstract class Piece {
 
     public abstract void setPosition(Position position);
 
-    public String typeOfPiece() {
-        return "empty";
-    }
+    public abstract String typeOfPiece();
 
-    public abstract List<Position> movePositions() throws IllegalPositionException;
+    public abstract List<Position> movePositions();
 
 }

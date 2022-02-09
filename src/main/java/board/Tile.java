@@ -10,7 +10,7 @@ public class Tile {
 
     public Tile(Position position,Piece piece){
         this.position = position;
-        this.isOccupied = false;
+        this.isOccupied = true;
         this.piece = piece;
     }
 
@@ -40,4 +40,7 @@ public class Tile {
         isOccupied = occupied;
     }
 
+    public Position getPosition() {
+        return position;
+    }
 }

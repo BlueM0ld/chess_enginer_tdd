@@ -39,8 +39,8 @@ public class BoardTest {
         //given
         ChessBoard chessBoard = new ChessBoard();
         //when
-        int numberOfWP = chessBoard.getAllWhitePieces().size();
-        int numberOfBP = chessBoard.getAllBlackPieces().size();
+        int numberOfWP = chessBoard.getTilesOccupiedByWhite().size();
+        int numberOfBP = chessBoard.getTilesOccupiedByBlack().size();
 
         //then
         Assertions.assertEquals(numberOfBP, 16);

@@ -4,6 +4,7 @@ import board.Position;
 import chesspieces.Pawn;
 import chesspieces.Piece;
 import enumvalues.Side;
+import exception.IllegalPositionException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +23,7 @@ public class PawnTest {
 
 
     @Test
-    public void testPawnPositionStart(){
+    public void testPawnPositionStart() throws IllegalPositionException {
         //given
         Position pos = new Position(2,1);
         Piece pawn = new Pawn(pos, Side.BLACK);
@@ -35,7 +36,7 @@ public class PawnTest {
     }
 
     @Test
-    public void testPawnPositionNonStart(){
+    public void testPawnPositionNonStart() throws IllegalPositionException {
         //given
         Position pos = new Position(3,1);
         Piece pawn = new Pawn(pos, Side.BLACK);
@@ -52,6 +53,9 @@ public class PawnTest {
         //given
         Position pos = new Position(7,1);
         Piece pawn = new Pawn(pos, Side.BLACK);
+
+
+
 
 
 

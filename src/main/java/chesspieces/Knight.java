@@ -12,9 +12,11 @@ import java.util.List;
 public class Knight extends Piece {
 
     Position position;
+    Side side;
 
     public Knight(Position position, Side side){
         this.position = position;
+        this.side = side;
     }
 
     @Override
@@ -30,7 +32,7 @@ public class Knight extends Piece {
 
     @Override
     public String typeOfPiece(){
-        return "knight";
+        return side.equals(Side.WHITE) ? "N" : "n";
     }
     
     @Override

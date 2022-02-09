@@ -42,6 +42,8 @@ public class Move {
 
     }
 
+
+
     private static void verifyMove(ChessBoard board, String piece, String fromTileCn, String toTileCn) {
         try {
             Position pieceOldPos = board.getPosition(fromTileCn);

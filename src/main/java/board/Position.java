@@ -1,17 +1,12 @@
 package board;
-import exception.IllegalPositionException;
 
 public class Position {
     int file;
     int rank;
     String chessNotation;
-    public Position(int rank, int file) throws IllegalPositionException {
-        if(rank >= 0 || rank < 7){
-            this.file = file;
-            this.rank = rank;
-        }else {
-            throw new IllegalPositionException("Invalid Position");
-        }
+    public Position(int rank, int file){
+        this.file = file;
+        this.rank = rank;
         this.chessNotation= chessNotation(rank,file);
 
     }

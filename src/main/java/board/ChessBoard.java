@@ -12,7 +12,7 @@ public class ChessBoard {
     private final Map<Tile, Piece>  blackOccupiedTiles = new HashMap<>();
 
     Tile[][] board = new Tile[8][8];
-    public ChessBoard() throws IllegalPositionException {
+    public ChessBoard(){
         //standardBoard
         char[] standardSetup = new BoardSetup().standardBoardSetup();
         int boardPointer = 0;
@@ -26,7 +26,7 @@ public class ChessBoard {
         }
 
     }
-//    public ChessBoard(char [] setup){}
+
 
     private Tile setPiece(char c, Position tilePosition) {
         Tile tile;
@@ -94,7 +94,7 @@ public class ChessBoard {
         return board[rank][file];
     }
 
-    public Position getPosition(String chessNotationString) throws IllegalPositionException {
+    public Position getPosition(String chessNotationString){
 
         int fileV= calculateFile(chessNotationString);
         int rankV= calculateRank(chessNotationString);
